@@ -1,0 +1,10 @@
+
+#card-tile:hover {
+	box-shadow: 3px 3px 10px 3px #d5d5d5;
+	border: 3px solid #d5d5d5;
+}
+
+a {
+	color:inherit;
+}
+

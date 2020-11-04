@@ -1,11 +1,17 @@
 
-
-
+/* .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}*/
 html, body {
 	height: 100%;
 	width: 100%;
 	font-family: arial, helvetica, sans-serif;
 	color: #222;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
 	word-break: break-word;
 }
 
@@ -25,9 +31,11 @@ a.nav-link {
 	font-size: 1.2rem !important;
 }
 
+/*.container-fluid {
+	padding: 0;
+}
 
-
-
+*/
 
 
 
@@ -64,8 +72,8 @@ a.nav-link {
 	padding: 2rem;
 	border-radius: 0;
 }
-.padding {
-	padding: 1.2rem;
+.padding {    
+	padding: 2rem;
 }
 
 
@@ -107,7 +115,7 @@ a.nav-link {
 
 /* Fun Animoji */
 button.fun {
-	width: 100%;
+	width: 99%;
 	margin-bottom: 2rem;
 }
 .gif {
@@ -160,6 +168,9 @@ hr.light-100 {
 
 
 
+[class*="col-"] {
+    padding: 1rem;
+}
 
 
 
