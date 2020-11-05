@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<title>Myanmar Science Learners</title>
+	<title>MSL-article-categories</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/all.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -25,9 +25,19 @@
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Articles</a>
-				</li>
+				<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			Articles
+        						</a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          			<a class="dropdown-item" href="article-categories.html">All articles</a>
+          			<div class="dropdown-divider"></div>
+          			<a class="dropdown-item" href="article-categories/physics.html">Physics</a>
+          			<a class="dropdown-item" href="article-categories/engineering.html">Engineering</a>
+          			<a class="dropdown-item" href="article-categories/programming.html">Programming</a>
+          			<a class="dropdown-item" href="article-categories/life-sciences.html">Life Sciences</a>
+        			</div>
+      			</li>
 				<li class="nav-item">
 					<a class="nav-link" href="projects.html">Projects</a>
 				</li>
@@ -41,9 +51,8 @@
 
 
 
-
 	<!-- Articles title and heading -->
-	<div class="container-fluid padding">
+	<div id="categories-title" class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
 			<h3 class="display-5">Categories</h3>
@@ -52,11 +61,12 @@
 	<hr>
 	</div>
 
-	<div class="container-fluid padding">
+	<div id="categories-container" class="container-fluid padding">
 	<div class="row padding">
 
-		<a href="team.html">
+		
 		<div class="col-sm-6 col-md-4 col-lg-3">
+			<a href="team.html">
 			<div id="card-tile" class="card">
 				<img class="card-img-top" src="img/categories-physics.jpg"> 
 				<div class="card-body text-center">
@@ -64,7 +74,8 @@
 					<a href="#" class="btn btn-primary">ဖတ်ရန်</a>
 				</div>
 			</div>
-		</div></a>
+			</a>
+		</div>
 		
 
 		<div class="col-sm-6 col-md-4 col-lg-3">
@@ -124,7 +135,7 @@
 		<div class="col-md-6">
 			<img src="img/logo.png">
 			<hr class="light">
-			<p>+95 123456789</p>
+			<p>+95 894234366</p>
 			<p>myanmarsciencelearners@gmail.com</p>
 			<p>Yangon, Myanmar</p>
 		</div>
@@ -132,17 +143,19 @@
 			<hr class="light">
 			<h4>Connect us :</h4>
 			<hr class="light">
-			<a href="#"><i class="fab fa-facebook"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.facebook.com/khaingkhant.htun"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UCD5tg2GKecV-xK1HSzyvnQQ"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.instagram.com/khaingkhanthtun/"><i class="fab fa-instagram"></i></a>
 		</div>
 		<div class="col-12">
 			<hr class="light-100">
-			<h5>&copy;myanmarsciencelearners.com</h5>
+			<h5>&copy;myanmarsciencelearners.com 2020</h5>
 		</div>
 	</div>
 	</div>
 	</footer>
+
+
 
 
 

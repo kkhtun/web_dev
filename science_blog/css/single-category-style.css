@@ -1,0 +1,13 @@
+#single-category-title {
+	padding-bottom: 0;
+}
+
+#single-category-title hr {
+	width: 80%;
+	border: 1px solid #d5d5d5;
+	margin-top: -0.5rem;
+}
+
+#single-category-container {
+	padding-top: 0;
+}

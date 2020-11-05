@@ -12,10 +12,10 @@ html, body {
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
-	word-break: break-word;
+	/*word-break: break-word;*/
 }
 
-/* Navigation Bar */
+/* Navigation Bar */S
 .navbar {
 	padding: 0rem;
 }
@@ -40,7 +40,7 @@ a.nav-link {
 
 
 
-/* Carousel */
+/* Carousel images */
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
@@ -68,8 +68,11 @@ a.nav-link {
 
 
 /* Jumbo Text */
+#main-jumbotron .row {
+	margin-bottom: 0;
+}
 .jumbotron {
-	padding: 2rem;
+	padding: 1rem;
 	border-radius: 0;
 }
 .padding {    
@@ -77,16 +80,47 @@ a.nav-link {
 }
 
 
-/* Welcome Categories */
-.welcome {
-	width: 75%;
-	margin: 0 auto;
-	padding-top: 2rem;
+/* Latest Post */
+div#latest-posts {
+	padding-bottom: 0;
 }
-.welcome hr {
-	border-top: 1px solid #000000;
-	margin-top: 0.2rem;
-	margin-bottom: 1.2rem;
+
+#latest-posts hr {
+	width: 99%;
+	border: 1px solid;
+	margin-top: -0.5rem;
+}
+#latest-posts-carousel .row {
+	padding-bottom: 0;
+}
+
+i.fa-angle-right, i.fa-angle-left {
+	color: #0275d8;
+	font-size: 2.5rem;
+	margin-top: 0.5rem;
+}
+
+i.fa-angle-right {
+	margin-right: -20px;
+}
+i.fa-angle-left {
+	margin-left: -20px;
+}
+
+
+
+
+/* Welcome Categories */
+
+#welcome hr {
+	border-top: 1px solid;
+	margin-top: 1rem;
+	margin-bottom: 0.3rem;
+	width: 75%;
+}
+#welcome div.row {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .fa-atom {
@@ -107,7 +141,7 @@ a.nav-link {
 
 .fa-atom, .fa-robot, .fa-code, .fa-dna {
 	font-size: 4rem;
-	margin: 1.1rem;
+	margin: 1rem;
 }
 
 /* Projects */
@@ -132,15 +166,15 @@ button.fun {
 .fa-facebook {
 	color: #3b599a;
 }
-.fa-twitter {
-	color: #00aced;
+.fa-youtube {
+	color: #FF0000;
 }
 .fa-instagram {
 	color: #517fa4;
 }
 
 .fa-facebook:hover, 
-.fa-twitter:hover, 
+.fa-youtube:hover, 
 .fa-instagram:hover {
 	color: #d5d5d5;
 }

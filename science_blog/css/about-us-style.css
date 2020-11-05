@@ -1,3 +1,17 @@
-#member img {
-	margin-top: 15%;
+
+
+#member .col-4 {
+	width: 100%;
+	height: 100%;
+
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+div#member {
+	border: 1px solid;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	background-color: #9fbfdf;
 }

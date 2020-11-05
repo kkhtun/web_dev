@@ -22,11 +22,21 @@
 		<div class="collapse navbar-collapse" id="collapsable-nav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="index.html">Home</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="article-categories.html">Articles</a>
-				</li>
+				<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			Articles
+        						</a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          			<a class="dropdown-item" href="article-categories.html">All articles</a>
+          			<div class="dropdown-divider"></div>
+          			<a class="dropdown-item" href="article-categories/physics.html">Physics</a>
+          			<a class="dropdown-item" href="article-categories/engineering.html">Engineering</a>
+          			<a class="dropdown-item" href="article-categories/programming.html">Programming</a>
+          			<a class="dropdown-item" href="article-categories/life-sciences.html">Life Sciences</a>
+        			</div>
+      			</li>
 				<li class="nav-item">
 					<a class="nav-link" href="projects.html">Projects</a>
 				</li>
@@ -87,10 +97,11 @@
 
 
 	<!-- Text Jumbo -->
-	<div class="container-fluid">
+	<div id="main-jumbotron" class="container-fluid">
 	<div class="row jumbotron">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+			<p class="lead">Myanmar Science Learners လူငယ်အဖွဲ့သည် 
+			မြန်မာ့လူငယ်များ အကြား သိပ္ပံ နှင့် နည်းပညာဆိုင်ရာ ဗဟုသုတနှင့် သတင်းအချက်အလက်များ မျှဝေပေးမည့် အဖွဲ့ တစ်ခု ဖြစ်ပါသည်။</p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
 			<a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Read More</button></a>
@@ -99,85 +110,120 @@
 	</div>
 
 
-	<!-- Welcome Categories -->
-	<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h3 class="display-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h3>
-			<hr>
-		</div>
-	</div>
-	</div>
-
-	<!-- categories column section -->
-	<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-xs-12 col-sm-6">
-			<i class="fas fa-atom"></i>
-			<h4>Physics</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		</div>
-		<div class="col-xs-12 col-sm-6">
-			<i class="fas fa-robot"></i>
-			<h4>Engineering</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		</div>
-		<div class="col-xs-12 col-sm-6">
-			<i class="fas fa-code"></i>
-			<h4>Programming</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		</div>
-		<div class="col-xs-12 col-sm-6">
-			<i class="fas fa-dna"></i>
-			<h4>Life Sciences</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		</div>
-	</div>
-	<hr class="my-4">
-	</div>
-
-
-
 	<!-- Latest Posts Title -->
-	<div class="container-fluid padding">
-	<div class="row welcome text-center">
+	<div id= "latest-posts" class="container-fluid padding">
+	<div class="row welcome">
 		<div class="col-12">
-			<h2 class="display-5">Latest Posts</h2>
+			<h4>နောက်ဆုံးရေးသားထားသော ဆောင်းပါးများ</h4>
 		</div>
 		</div>
 	<hr>
 	</div>
 
-	<!-- Latest Posts Cards -->
-	<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-md-6">
+	<!-- Latest Posts slide carousel-->
+	<div id="latest-posts-carousel" class="carousel slide" data-ride="carousel">
+	  	<div class="carousel-inner">
+	    <div class="carousel-item active">
+	   	<div class="row padding">
+	   		<div class="col-sm-6">
 			<div class="card">
 				<img class="card-img-top" src="img/latest_1.jpg">
 				<div class="card-body">
-					<h4 class="card-title">Title</h4>
+					<h4 class="card-title">Title1</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 					<a href="#" class="btn btn-outline-secondary">Read</a>
 				</div>
 			</div>
+			</div>
+
+			<div class="col-sm-6">
+			<div class="card">
+				<img class="card-img-top" src="img/latest_1.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Title2</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<a href="#" class="btn btn-outline-secondary">Read</a>
+				</div>
+			</div>
+			</div>
+
+	   	</div>
+	    </div>
+
+
+	    <div class="carousel-item">
+	      <div class="row padding">
+	   		<div class="col-sm-6">
+			<div class="card">
+				<img class="card-img-top" src="img/latest_1.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Title3</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<a href="#" class="btn btn-outline-secondary">Read</a>
+				</div>
+			</div>
+			</div>
+
+			<div class="col-sm-6">
+			<div class="card">
+				<img class="card-img-top" src="img/latest_1.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Title4</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<a href="#" class="btn btn-outline-secondary">Read</a>
+				</div>
+			</div>
+			</div>
+	   	</div>
+	    </div>
+
+	  	</div>
+
+	  	<a class="carousel-control-prev" href="#latest-posts-carousel" role="button" data-slide="prev">
+	    <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+    	<span class="sr-only">Previous</span>
+	  	</a>
+
+	  	<a class="carousel-control-next" href="#latest-posts-carousel" role="button" data-slide="next">
+	    <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    	<span class="sr-only">Next</span>
+	  	</a>
+	</div>
+
+
+
+	<!-- welcome categories column section -->
+	<div id="welcome" class="container-fluid padding">
+	<div class="row text-center padding">
+
+		<div class="col-12">
+			<h4>အောက်ပါ ဘာသာရပ်များနှင့် သက်ဆိုင်သော ဆောင်းပါးများကို ဝါသနာ ရှင်များနှင့် ပူးပေါင်း၍ပြန်လည်ဝေမျှ ထားပါသည်။</h4>
+			<hr>
 		</div>
 
-		<div class="col-md-6">
-			<div class="card">
-				<img class="card-img-top" src="img/latest_1.jpg">
-				<div class="card-body">
-					<h4 class="card-title">Title</h4>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-					<a href="#" class="btn btn-outline-secondary">Read</a>
-				</div>
-			</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fas fa-atom"></i>
+			<h4>Physics</h4>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fas fa-robot"></i>
+			<h4>Engineering</h4>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fas fa-code"></i>
+			<h4>Programming</h4>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fas fa-dna"></i>
+			<h4>Life Sciences</h4>
 		</div>
 	</div>
 	</div>
+	<hr>
 
 
 	<!-- Projects -->
-	<div clasa="container-fluid padding">
+	<!-- <div clasa="container-fluid padding">
 	<div class="row padding">
 		<div id = "project-description" class="col-md-6">
 			<h3>Title for some projects !!</h3>
@@ -191,9 +237,7 @@
 			<img src="img/project.jpg" class="img-fluid">
 		</div>
 	</div>
-	</div>
-
-	<hr class="my-4">
+	</div> -->
 
 
 	<!-- Fixed Background Image -->
@@ -228,7 +272,7 @@
 
 
 
-	<!-- About Us -->
+	<!-- Vision and about Us -->
 	<!-- <div clasa="container-fluid padding">
 	<div class="row padding">
 		<div class="col-md-6">
@@ -243,7 +287,6 @@
 	</div>
 	</div>
  -->
-	<hr class="my-4">
 
 
 	<!-- Footer -->
@@ -253,7 +296,7 @@
 		<div class="col-md-6">
 			<img src="img/logo.png">
 			<hr class="light">
-			<p>+95 123456789</p>
+			<p>+95 894234366</p>
 			<p>myanmarsciencelearners@gmail.com</p>
 			<p>Yangon, Myanmar</p>
 		</div>
@@ -261,13 +304,13 @@
 			<hr class="light">
 			<h4>Connect us :</h4>
 			<hr class="light">
-			<a href="#"><i class="fab fa-facebook"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.facebook.com/khaingkhant.htun"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UCD5tg2GKecV-xK1HSzyvnQQ"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.instagram.com/khaingkhanthtun/"><i class="fab fa-instagram"></i></a>
 		</div>
 		<div class="col-12">
 			<hr class="light-100">
-			<h5>&copy;myanmarsciencelearners.com</h5>
+			<h5>&copy;myanmarsciencelearners.com 2020</h5>
 		</div>
 	</div>
 	</div>
