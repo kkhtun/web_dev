@@ -123,6 +123,9 @@ i.fa-angle-left {
 	padding-bottom: 0;
 }
 
+#welcome h4 {
+	line-height: 1.5;
+}
 .fa-atom {
 	color: #6666FF;
 }
@@ -180,10 +183,16 @@ button.fun {
 }
 
 footer {
-	background-color: #525252;
+	background-color: #747171;
 	color: #ffffff;
 	padding-top: 2rem;
+	font-weight: bold;
 }
+
+footer h5, footer h4 {
+	font-weight: bold;
+}
+
 hr.light {
 	border-top: 1px solid #d5d5d5;
 	width: 85%;
@@ -238,10 +247,6 @@ ul.navbar-nav li{
 	text-align: center;
 	padding: 0;
 }
-
-
-
-
 
 .carousel-caption {
 	top: 45%;
@@ -302,6 +307,13 @@ ul.navbar-nav li{
 }
 
 
+
+/*footer on mobile */
+footer {
+	line-height: 0.5;
+	padding-top: 0;
+	padding-bottom: 0;
+}
 }
 
 
