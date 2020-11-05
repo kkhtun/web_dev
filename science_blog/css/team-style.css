@@ -15,3 +15,11 @@ div#member {
 	margin-bottom: 1rem;
 	background-color: #9fbfdf;
 }
+
+
+#team-title hr {
+	width: 80%;
+	border: 1px solid #d5d5d5;
+	margin-top: -0.5rem;
+}
+
