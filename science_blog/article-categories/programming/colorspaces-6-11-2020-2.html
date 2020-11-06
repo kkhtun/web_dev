@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>Engineering</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="../../css/all.css" rel="stylesheet">
+	<link href="../../css/style.css" rel="stylesheet">
+	<link href="../../css/single-category-style.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="../../img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable-nav">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsable-nav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../../index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			Articles
+        						</a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          			<a class="dropdown-item" href="../../article-categories.html">All articles</a>
+          			<div class="dropdown-divider"></div>
+          			<a class="dropdown-item" href="../physics.html">Physics</a>
+          			<a class="dropdown-item" href="../engineering.html">Engineering</a>
+          			<a class="dropdown-item" href="../programming.html">Programming</a>
+          			<a class="dropdown-item" href="../life-sciences.html">Life Sciences</a>
+        			</div>
+      			</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../projects.html">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../team.html">Team</a>
+				</li>
+			</ul>
+		</div>
+	</div>	
+	</nav>
+
+
+	<!-- Articles title and heading -->
+	<div id="single-category-title" class="container-fluid padding">
+	<div class="row welcome">
+		<div class="col-12">
+			<h4>Color Spaces - Part 2</h4>
+			<p>Published: 6-11-2020</p>
+		</div>
+		</div>
+	<hr style="width: 100%;">
+	</div>
+
+	<div id="single-category-container" class="container-fluid padding">
+	<div class="row">
+		<div class="col-md-10 col-sm-11 col-xs-12">
+			
+			<p>LAB: luminance, and green-red and blue-yellow color components</p>
+			<p>
+            LAB မှာ အပိုင်း (၃)ပိုင်းပါပါတယ်။ L* ရယ်၊ a* ဆိုတဲ့ အစိမ်း/အနီ အပိုင်းရယ်၊ b* ဆိုတဲ့ အပြာ/အဝါ အပိုင်းရယ်ဆိုပြီးပါတယ်။ မြေပုံတွေမှာလို longitude,latitude ပြီး altitude ဖတ်သလိုမျိုးပဲ L*a*b* color တန်ဖိုးတွေကို ကြည့်ပြီး color တွေကို ဖတ်ရတာပါ။</p>
+            <img src="colorspaces-6-11-2020-2/1.png" style="max-width: 95%;">
+			<br>
+			<br>
+            <p>
+			L*: Lightness<br>
+			a*: Red/Green value<br>
+			b*: Blue/Yellow Value <br>
+			a* axis က ဘယ်ကနေညာကို သွားပြီး +a* တန်ဖိုး -a* တန်ဖိုးအနည်းအများအလိုက် color intensity က ကွဲပြားနေမှာပါ။ အောက်ကပုံကို ကြည့်ခြင်းဖြင့် LAB Color space ဘယ်လိုလုပ်တယ်ဆိုတာသိနိုင်ပါတယ်။ chart ရဲ့ center က color တန်ဖိုးက gray ပါ။ L* axis ကအထက်ကိုတက်လေ ဖြူလေဖြစ်ပြီး origin အမှတ်မှာ အမဲပါ။ Photoshop တို့ လို photo editing လုပ်တဲ့အခါမှာသုံးပါတယ်။ color space က RGB color ထက်ပိုကြီးတော့ အရောင်အသွေးစုံအောင် edit ပိုလုပ်နိုင်ပါတယ်။
+			</p>
+			<img src="colorspaces-6-11-2020-2/2.jpg" style="max-width: 95%;">
+			<br>
+			<br>
+			<p>ပါတဲ့ color က gray အရောင်ကနေ ဘယ်လောက်တန်ဖိုးကွာဝေးလည်းပြပေးပါတယ်။ ဥပမာ သင့်ရဲ့ပုံက saturation တန်ဖိုးအရမ်းနည်းရင် Gray ဖြစ်သွားမှာပါ။ Lightness အပိုင်းမှာတော့ ပုံတစ်ပုံက အဖြူ အရောင်လိုက်ပြီး တန်ဖိုးအနိမ့်အမြင့်ပြောင်းတာကို ပြောတာပါ။ Lightness များရင် ပုံက ဖြူစွတ်သွားပါလိမ့်မယ်။ Value ကတော့ အမဲရောင်နဲ့ လိုက်ပြီး ပြောင်းလဲလာတဲ့ color intensity တန်ဖိုးကိုပြောပြတာဖစ်ပါတယ်။ Value နည်းလေ အမဲရောင်ဘက်လိုက်လေပါ။</p>
+			<img src="colorspaces-6-11-2020-2/3.png" style="max-width: 95%;">
+			<br>
+			<br>
+			<p>XYZ: color in the x,y and z dimensions color တွေကို 3D dimensions နဲ့ ဖော်ပြထားတာပါ။ RGB colors တွေမှာ ကျွန်တော်တို့မြင်ရတဲ့ အရာထက်ပိုပြီး မသွားနိုင်တဲ့ saturation threshold တစ်ခုရှိပါတယ်။ XYZ တော့ အဲ့ threshold ထပ်ကျော်အောင် သွားနိုင်ပါတယ်။ ဒီနေရာမှာ ကျွန်တော်တို့ ဘာကြောင့်များ Threshold ထက်ကျော်အောင်သွားချင်တာလည်းဆိုပြီး မေးခွန်းထုတ်စရာရှိလာပါတယ်။ တကယ်တော့ ကျွန်တော်တို့ မမြင်ရနိုင်တဲ့ color တွေရှိပါသေးတယ် အဲ့လိုအရောင်မျိုးတွေကို ထုတ်ဖို့ ဒီဂျစ်တယ်စနစ်တွေသုံးတဲ့ စက်တွေမှာလိုလာပါတယ်။ ဥပမာ printer တစ်လုံးကို ကျွန်တော်တို့ color code နဲ့ ရိုက်လိုက်တာနဲ့ လိုချင်တဲ့အရောင်ထွက်အောင်လုပ်ပေးနိုင်သလိုမျိုး color matching တွေမှာသုံးပါတယ်။XYZ ကို သုံးပြီး ကျွန်တော်တို့ တကယ့်အပြင်မှာရှိတဲ့အရောင်တွေကို encode လုပ်နိုင်ပါတယ်။ ဒါကြောင့် sRGB ကနေ ထပ်ပြီး ကျွန်တော်တို့ လိုချင်တဲ့ရောင်ကို မှန်းဆတွက်ချက်ပြီးထုတ်ထားတဲ့အရာကို XYZ color model လို့ခေါ်ပါတယ်။
+			</p>
+			<br>
+			<p>Contributed by: William Kyaw</p>
+			<p>References :</p>
+			<p>Practical Machine Learning and Image Processing - Himanshu Singh</p>
+			<!-- <p><a href="https://examine.com/nutrition/how-caffeine-works-in-your-brain/" target="_blank">Examine.com - How does caffeine works in your brain? </a></p> -->
+			<br>
+		</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer>
+	<div class="container-fluid padding">
+	<div class="row text-center">
+		<div class="col-md-6">
+			<img src="../../img/logo.png">
+			<hr class="light">
+			<p>+95 894234366</p>
+			<p>myanmarsciencelearners@gmail.com</p>
+			<p>Yangon, Myanmar</p>
+		</div>
+		<div class="col-md-6 social">
+			<hr class="light">
+			<h4>Connect us :</h4>
+			<hr class="light">
+			<a href="https://www.facebook.com/khaingkhant.htun"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UCD5tg2GKecV-xK1HSzyvnQQ"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.instagram.com/khaingkhanthtun/"><i class="fab fa-instagram"></i></a>
+		</div>
+		<div class="col-12">
+			<hr class="light-100">
+			<h5>&copy;myanmarsciencelearners.com 2020</h5>
+		</div>
+	</div>
+	</div>
+	</footer>
+
+
+
+
+
+
+
+
+	<script defer src="../../js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
