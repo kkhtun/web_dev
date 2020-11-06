@@ -123,8 +123,10 @@ i.fa-angle-left {
 	padding-bottom: 0;
 }
 
+
 #welcome h4 {
 	line-height: 1.5;
+	font-size: 1.1em;
 }
 .fa-atom {
 	color: #6666FF;
